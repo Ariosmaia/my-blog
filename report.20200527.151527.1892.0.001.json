@@ -1,0 +1,607 @@
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200527.151527.1892.0.001.json",
+    "dumpEventTime": "2020-05-27T15:15:27Z",
+    "dumpEventTimeStamp": "1590603327420",
+    "processId": 1892,
+    "cwd": "C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog",
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\.bin\\\\..\\gatsby\\dist\\bin\\gatsby.js",
+      "develop"
+    ],
+    "nodejsVersion": "v13.7.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "13.7.0",
+      "v8": "7.9.317.25-node.28",
+      "uv": "1.34.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "79",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.1",
+      "openssl": "1.1.1d",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v13.7.0/node-v13.7.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v13.7.0/node-v13.7.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v13.7.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.18363",
+    "osVersion": "Windows 10 Pro",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 7182984,
+        "nice": 0,
+        "sys": 5633187,
+        "idle": 39724968,
+        "irq": 1086937
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 4837031,
+        "nice": 0,
+        "sys": 3448734,
+        "idle": 44255093,
+        "irq": 190890
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 9429250,
+        "nice": 0,
+        "sys": 4035421,
+        "idle": 39076187,
+        "irq": 66781
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 6161078,
+        "nice": 0,
+        "sys": 2772718,
+        "idle": 43607062,
+        "irq": 42906
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 8288093,
+        "nice": 0,
+        "sys": 3850640,
+        "idle": 40402125,
+        "irq": 63734
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 4931203,
+        "nice": 0,
+        "sys": 2833390,
+        "idle": 44776265,
+        "irq": 44625
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 8795500,
+        "nice": 0,
+        "sys": 3864125,
+        "idle": 39881234,
+        "irq": 58390
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 1800,
+        "user": 6292203,
+        "nice": 0,
+        "sys": 2929343,
+        "idle": 43319312,
+        "irq": 37265
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "d8:9c:67:01:aa:b1",
+        "address": "2804:14c:bf36:82c6:2833:20ac:f55f:cec9",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "d8:9c:67:01:aa:b1",
+        "address": "2804:14c:bf36:82c6:40f:7957:4bab:9612",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "d8:9c:67:01:aa:b1",
+        "address": "fe80::2833:20ac:f55f:cec9",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 12
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "d8:9c:67:01:aa:b1",
+        "address": "192.168.0.4",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "vEthernet (Default Switch)",
+        "internal": false,
+        "mac": "00:15:5d:58:26:01",
+        "address": "fe80::add7:ff14:6da1:dc78",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 23
+      },
+      {
+        "name": "vEthernet (Default Switch)",
+        "internal": false,
+        "mac": "00:15:5d:58:26:01",
+        "address": "192.168.133.33",
+        "netmask": "255.255.255.240",
+        "family": "IPv4"
+      },
+      {
+        "name": "vEthernet (nat)",
+        "internal": false,
+        "mac": "00:15:5d:ad:a2:a8",
+        "address": "fe80::5816:87cf:9d96:6961",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 32
+      },
+      {
+        "name": "vEthernet (nat)",
+        "internal": false,
+        "mac": "00:15:5d:ad:a2:a8",
+        "address": "172.31.112.1",
+        "netmask": "255.255.240.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "Allan-Dell"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": ["Unavailable."]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff7e6ee1c09",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+10857"
+    },
+    {
+      "pc": "0x00007ff7e6ee5f7c",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+28124"
+    },
+    {
+      "pc": "0x00007ff7e6ee4f38",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+23960"
+    },
+    {
+      "pc": "0x00007ff7e6fdebcb",
+      "symbol": "v8::base::CPU::has_sse+38187"
+    },
+    {
+      "pc": "0x00007ff7e7807fee",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x00007ff7e77ef741",
+      "symbol": "v8::SharedArrayBuffer::Externalize+785"
+    },
+    {
+      "pc": "0x00007ff7e76b67ac",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1468"
+    },
+    {
+      "pc": "0x00007ff7e76c1af0",
+      "symbol": "v8::internal::Heap::ProtectUnprotectedMemoryChunks+1312"
+    },
+    {
+      "pc": "0x00007ff7e76be5e4",
+      "symbol": "v8::internal::Heap::PageFlagsAreConsistent+3188"
+    },
+    {
+      "pc": "0x00007ff7e76b3cf3",
+      "symbol": "v8::internal::Heap::CollectGarbage+1283"
+    },
+    {
+      "pc": "0x00007ff7e76b2484",
+      "symbol": "v8::internal::Heap::AllocateExternalBackingStore+1396"
+    },
+    {
+      "pc": "0x00007ff7e76d4554",
+      "symbol": "v8::internal::Factory::NewFillerObject+196"
+    },
+    {
+      "pc": "0x00007ff7e742e841",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+1681"
+    },
+    {
+      "pc": "0x00007ff7e7c5154d",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+517453"
+    },
+    {
+      "pc": "0x00007ff7e7c05f14",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+208660"
+    },
+    {
+      "pc": "0x00007ff7e7c1bd42",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+298306"
+    },
+    {
+      "pc": "0x00007ff7e7bd7636",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+17974"
+    },
+    {
+      "pc": "0x000002fca6379e46",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2152411136,
+    "totalCommittedMemory": 2152411136,
+    "usedMemory": 2143635008,
+    "availableMemory": 47773688,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 33040,
+        "used": 33040,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 2097152,
+        "committedMemory": 2097152,
+        "capacity": 1047424,
+        "used": 164008,
+        "available": 883416
+      },
+      "old_space": {
+        "memorySize": 2108825600,
+        "committedMemory": 2108825600,
+        "capacity": 2104994464,
+        "used": 2104555776,
+        "available": 438688
+      },
+      "code_space": {
+        "memorySize": 2527232,
+        "committedMemory": 2527232,
+        "capacity": 2070272,
+        "used": 2070272,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 5509120,
+        "committedMemory": 5509120,
+        "capacity": 3830480,
+        "used": 3830480,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 32243712,
+        "committedMemory": 32243712,
+        "capacity": 32127288,
+        "used": 32127288,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 946176,
+        "committedMemory": 946176,
+        "capacity": 854144,
+        "used": 854144,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047424,
+        "used": 0,
+        "available": 1047424
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 329.546,
+    "kernelCpuSeconds": 329.593,
+    "cpuConsumptionPercent": 176.24,
+    "maxRss": 3534790656,
+    "pageFaults": {
+      "IORequired": 3655416,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 10557,
+      "writes": 227
+    }
+  },
+  "libuv": [],
+  "environmentVariables": {
+    "=C:": "C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "ANDROID_HOME": "C:\\Android\\Sdk",
+    "APPDATA": "C:\\Users\\Allan\\AppData\\Roaming",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "caminho": "C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "ChocolateyLastPathUpdate": "132311735788752737",
+    "ChocolateyToolsLocation": "C:\\tools",
+    "CLASSPATH": ".;",
+    "COLORTERM": "truecolor",
+    "COMMONPROGRAMFILES": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "ALLAN-DELL",
+    "COMSPEC": "C:\\Windows\\system32\\cmd.exe",
+    "DART_SDK": "C:\\Program Files\\Dart\\dart-sdk",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "EXEPATH": "C:\\Program Files\\Git\\bin",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "GATSBY_BUILD_STAGE": "develop",
+    "gatsby_executing_command": "develop",
+    "GATSBY_LOGGER": "ink",
+    "gatsby_log_level": "normal",
+    "GIT_ASKPASS": "c:\\Users\\Allan\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh",
+    "GOPATH": "C:\\Users\\Allan\\go",
+    "HOME": "C:\\Users\\Allan",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\Allan",
+    "INIT_CWD": "C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog",
+    "JAVA_HOME": "C:\\Program Files\\Java\\jdk1.8.0_211",
+    "LANG": "pt_BR.UTF-8",
+    "LOCALAPPDATA": "C:\\Users\\Allan\\AppData\\Local",
+    "LOGONSERVER": "\\\\ALLAN-DELL",
+    "MSYSTEM": "MINGW64",
+    "NODE": "C:\\Program Files\\nodejs\\node.exe",
+    "NODE_ENV": "development",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"develop\"],\"original\":[\"develop\"]}",
+    "npm_config_bin_links": "true",
+    "npm_config_ignore_optional": "",
+    "npm_config_ignore_scripts": "",
+    "npm_config_init_license": "MIT",
+    "npm_config_init_version": "1.0.0",
+    "npm_config_registry": "https://registry.yarnpkg.com",
+    "npm_config_save_prefix": "^",
+    "npm_config_strict_ssl": "true",
+    "npm_config_user_agent": "yarn/1.21.1 npm/? node/v13.7.0 win32 x64",
+    "npm_config_version_commit_hooks": "true",
+    "npm_config_version_git_message": "v%s",
+    "npm_config_version_git_sign": "",
+    "npm_config_version_git_tag": "true",
+    "npm_config_version_tag_prefix": "v",
+    "npm_execpath": "C:\\Program Files (x86)\\Yarn\\bin\\yarn.js",
+    "npm_lifecycle_event": "develop",
+    "npm_lifecycle_script": "gatsby develop",
+    "npm_node_execpath": "C:\\Program Files\\nodejs\\node.exe",
+    "npm_package_author_email": "mathews.kyle@gmail.com",
+    "npm_package_author_name": "Kyle Mathews",
+    "npm_package_bugs_url": "https://github.com/gatsbyjs/gatsby/issues",
+    "npm_package_dependencies_gatsby": "^2.21.37",
+    "npm_package_dependencies_gatsby_image": "^2.4.4",
+    "npm_package_dependencies_gatsby_plugin_manifest": "^2.4.5",
+    "npm_package_dependencies_gatsby_plugin_offline": "^3.2.3",
+    "npm_package_dependencies_gatsby_plugin_prefetch_google_fonts": "^1.4.3",
+    "npm_package_dependencies_gatsby_plugin_react_helmet": "^3.3.1",
+    "npm_package_dependencies_gatsby_plugin_sharp": "^2.6.4",
+    "npm_package_dependencies_gatsby_plugin_styled_components": "^3.3.2",
+    "npm_package_dependencies_gatsby_source_filesystem": "^2.3.4",
+    "npm_package_dependencies_gatsby_transformer_sharp": "^2.5.2",
+    "npm_package_dependencies_prop_types": "^15.7.2",
+    "npm_package_dependencies_react": "^16.12.0",
+    "npm_package_dependencies_react_dom": "^16.12.0",
+    "npm_package_dependencies_react_helmet": "^6.0.0",
+    "npm_package_dependencies_styled_components": "^5.1.0",
+    "npm_package_dependencies_styled_icons": "^10.2.1",
+    "npm_package_description": "A simple starter to get up and developing quickly with Gatsby",
+    "npm_package_devDependencies_babel_eslint": "^10.1.0",
+    "npm_package_devDependencies_cross_env": "^7.0.2",
+    "npm_package_devDependencies_eslint": "^6.8.0",
+    "npm_package_devDependencies_eslint_config_airbnb": "^18.1.0",
+    "npm_package_devDependencies_eslint_config_prettier": "^6.11.0",
+    "npm_package_devDependencies_eslint_plugin_import": "^2.20.2",
+    "npm_package_devDependencies_eslint_plugin_jsx_a11y": "^6.2.3",
+    "npm_package_devDependencies_eslint_plugin_prettier": "^3.1.3",
+    "npm_package_devDependencies_eslint_plugin_react": "^7.20.0",
+    "npm_package_devDependencies_eslint_plugin_react_hooks": "^2.5.1",
+    "npm_package_devDependencies_gatsby_plugin_prettier_eslint": "^1.0.4",
+    "npm_package_devDependencies_prettier": "^2.0.5",
+    "npm_package_keywords_0": "gatsby",
+    "npm_package_license": "MIT",
+    "npm_package_name": "gatsby-starter-default",
+    "npm_package_private": "true",
+    "npm_package_readmeFilename": "README.md",
+    "npm_package_repository_type": "git",
+    "npm_package_repository_url": "https://github.com/gatsbyjs/gatsby-starter-default",
+    "npm_package_scripts_build": "gatsby build",
+    "npm_package_scripts_clean": "gatsby clean",
+    "npm_package_scripts_develop": "gatsby develop",
+    "npm_package_scripts_develop_playground": "cross-env GATSBY_GRAPHQL_IDE=playground gatsby develop",
+    "npm_package_scripts_format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "npm_package_scripts_serve": "gatsby serve",
+    "npm_package_scripts_start": "npm run develop",
+    "npm_package_scripts_test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "npm_package_version": "0.1.0",
+    "NUMBER_OF_PROCESSORS": "8",
+    "OneDrive": "C:\\Users\\Allan\\OneDrive",
+    "OS": "Windows_NT",
+    "PATH": "C:\\Users\\Allan\\AppData\\Local\\Temp\\yarn--1590602953001-0.8783588747768021;C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\.bin;C:\\Users\\Allan\\AppData\\Local\\Yarn\\Data\\link\\node_modules\\.bin;C:\\Program Files\\libexec\\lib\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Program Files\\lib\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Allan\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python27;C:\\Python27\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\dotnet;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn;C:\\Program Files\\Dart\\dart-sdk\\bin;C:\\Users\\Allan\\Documents\\bin;C:\\Program Files\\PuTTY;C:\\Program Files (x86)\\Yarn\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs;C:\\Program Files\\Java\\jdk1.8.0_211\\bin;C:\\Android\\Sdk\\platform-tools;C:\\Android\\Sdk\\tools;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Go\\bin;C:\\Program Files\\Amazon\\AWSCLIV2;C:\\Program Files (x86)\\QuickTime\\QTSystem;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\Allan\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Allan\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\src\\flutter\\bin;C:\\Users\\Allan\\AppData\\Roaming\\Pub\\Cache\\bin;C:\\Users\\Allan\\.dotnet\\tools;C:\\Users\\Allan\\AppData\\Local\\hyper\\app-3.0.2\\resources\\bin;C:\\Users\\Allan\\AppData\\Local\\Yarn\\bin;C:\\Users\\Allan\\AppData\\Roaming\\npm;C:\\Program Files\\heroku\\bin;C:\\tools\\Cmder;C:\\Users\\Allan\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Allan\\go\\bin",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
+    "PLINK_PROTOCOL": "ssh",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 142 Stepping 10, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "8e0a",
+    "ProgramData": "C:\\ProgramData",
+    "PROGRAMFILES": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\PowerShell\\Modules\\",
+    "PUBLIC": "C:\\Users\\Public",
+    "PWD": "/c/Users/Allan/Desktop/Gatsby/my-blog",
+    "SESSIONNAME": "Console",
+    "SHLVL": "2",
+    "SYSTEMDRIVE": "C:",
+    "SYSTEMROOT": "C:\\Windows",
+    "TEMP": "C:\\Users\\Allan\\AppData\\Local\\Temp",
+    "TERM_PROGRAM": "vscode",
+    "TERM_PROGRAM_VERSION": "1.45.1",
+    "TMP": "C:\\Users\\Allan\\AppData\\Local\\Temp",
+    "USERDOMAIN": "ALLAN-DELL",
+    "USERDOMAIN_ROAMINGPROFILE": "ALLAN-DELL",
+    "USERNAME": "Allan",
+    "USERPROFILE": "C:\\Users\\Allan",
+    "VIPSHOME": "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release",
+    "VSCODE_GIT_ASKPASS_MAIN": "c:\\Users\\Allan\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js",
+    "VSCODE_GIT_ASKPASS_NODE": "C:\\Users\\Allan\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+    "VSCODE_GIT_IPC_HANDLE": "\\\\.\\pipe\\vscode-git-9d0809227f-sock",
+    "WINDIR": "C:\\Windows",
+    "YARN_WRAP_OUTPUT": "false",
+    "_": "/usr/bin/winpty"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\Windows\\SYSTEM32\\ntdll.dll",
+    "C:\\Program Files\\AVAST Software\\Avast\\aswhook.dll",
+    "C:\\Windows\\System32\\KERNEL32.DLL",
+    "C:\\Windows\\System32\\KERNELBASE.dll",
+    "C:\\Windows\\System32\\WS2_32.dll",
+    "C:\\Windows\\System32\\RPCRT4.dll",
+    "C:\\Windows\\System32\\PSAPI.DLL",
+    "C:\\Windows\\System32\\ADVAPI32.dll",
+    "C:\\Windows\\System32\\msvcrt.dll",
+    "C:\\Windows\\System32\\sechost.dll",
+    "C:\\Windows\\System32\\USER32.dll",
+    "C:\\Windows\\System32\\win32u.dll",
+    "C:\\Windows\\System32\\GDI32.dll",
+    "C:\\Windows\\System32\\gdi32full.dll",
+    "C:\\Windows\\System32\\msvcp_win.dll",
+    "C:\\Windows\\System32\\ucrtbase.dll",
+    "C:\\Windows\\System32\\CRYPT32.dll",
+    "C:\\Windows\\System32\\MSASN1.dll",
+    "C:\\Windows\\System32\\bcrypt.dll",
+    "C:\\Windows\\SYSTEM32\\dbghelp.dll",
+    "C:\\Windows\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\Windows\\SYSTEM32\\USERENV.dll",
+    "C:\\Windows\\System32\\profapi.dll",
+    "C:\\Windows\\SYSTEM32\\WINMM.dll",
+    "C:\\Windows\\SYSTEM32\\WINMMBASE.dll",
+    "C:\\Windows\\System32\\cfgmgr32.dll",
+    "C:\\Windows\\System32\\bcryptPrimitives.dll",
+    "C:\\Windows\\System32\\IMM32.DLL",
+    "C:\\Windows\\System32\\powrprof.dll",
+    "C:\\Windows\\System32\\UMPDC.dll",
+    "C:\\Windows\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\Windows\\system32\\uxtheme.dll",
+    "C:\\Windows\\System32\\combase.dll",
+    "C:\\Windows\\system32\\mswsock.dll",
+    "C:\\Windows\\System32\\kernel.appcore.dll",
+    "C:\\Windows\\System32\\NSI.dll",
+    "C:\\Windows\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\Windows\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\Windows\\SYSTEM32\\DNSAPI.dll",
+    "C:\\Windows\\system32\\napinsp.dll",
+    "C:\\Windows\\system32\\pnrpnsp.dll",
+    "C:\\Windows\\System32\\winrnr.dll",
+    "C:\\Windows\\system32\\NLAapi.dll",
+    "C:\\Windows\\system32\\wshbth.dll",
+    "C:\\Windows\\System32\\rasadhlp.dll",
+    "C:\\Windows\\System32\\fwpuclnt.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\sharp.node",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libvips-42.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libglib-2.0-0.dll",
+    "C:\\Windows\\System32\\ole32.dll",
+    "C:\\Windows\\System32\\SHELL32.dll",
+    "C:\\Windows\\System32\\shcore.dll",
+    "C:\\Windows\\System32\\windows.storage.dll",
+    "C:\\Windows\\System32\\shlwapi.dll",
+    "C:\\Windows\\System32\\cryptsp.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libvips-cpp.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libcairo-2.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libexif-12.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libexpat-1.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libfontconfig-1.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libgif-7.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libgio-2.0-0.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libgmodule-2.0-0.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libgobject-2.0-0.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libgsf-1-114.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libintl-8.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libjpeg-62.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\liblcms2-2.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\liborc-0.4-0.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libpango-1.0-0.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libpangoft2-1.0-0.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libpng16-16.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\librsvg-2-2.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libtiff-5.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libwebp-7.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libwebpdemux-2.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libwebpmux-3.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libz1.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libgcc_s_seh-1.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libfreetype-6.dll",
+    "C:\\Windows\\SYSTEM32\\MSIMG32.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libpixman-1-0.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libffi-7.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libxml2-2.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libiconv-2.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libfribidi-0.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libharfbuzz.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libgdk_pixbuf-2.0-0.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libpangocairo-1.0-0.dll",
+    "\\\\?\\C:\\Users\\Allan\\Desktop\\Gatsby\\my-blog\\node_modules\\sharp\\build\\Release\\libpangowin32-1.0-0.dll",
+    "C:\\Windows\\SYSTEM32\\ntmarta.dll"
+  ]
+}

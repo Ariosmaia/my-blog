@@ -4,25 +4,21 @@ import { useStaticQuery, graphql } from 'gatsby';
 import * as S from './styles';
 
 function Avatar() {
+  const { avatarImage } = useStaticQuery(
+    graphql`
+      query {
+        avatarImage: file(relativePath: { eq: "profile-photo.jpg" }) {
+          childImageSharp {
+            fixed(width: 60, height: 60) {
+              ...GatsbyImageSharpFixed_tracedSVG
+            }
+          }
+        }
+      }
+    `
+  );
 
-	const { avatarImage } = useStaticQuery(
-		graphql`
-			query {
-				avatarImage: file(relativePath: { eq: "profile-photo.jpg"}) {
-					childImageSharp {
-						fixed(width: 60, height: 60) {
-							...GatsbyImageSharpFixed_tracedSVG
-						}
-					}
-				}
-			}
-		`
-	);
-
-	return <S.AvatarWrapper fixed={avatarImage.childImageSharp.fixed} />;
+  return <S.AvatarWrapper fixed={avatarImage.childImageSharp.fixed} />;
 }
 
 export default Avatar;
-
-
-

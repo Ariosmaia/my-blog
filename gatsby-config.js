@@ -1,13 +1,47 @@
 module.exports = {
   siteMetadata: {
-	title: `Allan Rios`,
-	position: `Full Stack Developer`,
+    title: `Allan Rios`,
+    position: `Full Stack Developer`,
     description: `Funcionário da empresa Pro-Packages Sistemas, estudante de análise e desenvolvimento de sistemas pela FIAP e escrevo sobre o que estou aprendendo sobre backend, frontend e mobile.`,
     author: `@allarios`,
   },
   plugins: [
-	`gatsby-plugin-styled-components`,
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: 'gatsby-plugin-prettier-eslint',
+      options: {
+        prettier: {
+          patterns: [
+            // the pattern "**/*.{js,jsx,ts,tsx}" is not used because we will rely on `eslint --fix`
+            '**/*.{css,scss,less}',
+            '**/*.{json,json5}',
+            '**/*.{graphql}',
+            '**/*.{md,mdx}',
+            '**/*.{html}',
+            '**/*.{yaml,yml}',
+          ],
+        },
+        eslint: {
+          patterns: '**/*.{js,jsx,ts,tsx}',
+          customOptions: {
+            fix: true,
+            cache: true,
+          },
+        },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Roboto`,
+            variants: ['400', '700'],
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -33,4 +67,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
